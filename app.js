@@ -86,12 +86,11 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
     document.getElementById("score-" + activePlayer).textContent =
       scores[activePlayer];
     // ug toglogch hojson esehiig shalgah
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       //  togloomiig duussan tolowt oruulna
       isNewGame = false;
       // ylagch gsen textiig nerniih n orond gargana
-      document.getElementById("name-" + activePlayer).textContent =
-        "WINNER CHICKEN DINNER";
+      document.getElementById("name-" + activePlayer).textContent = "WINNER!!!";
       document
         .querySelector(".player-" + activePlayer + "-panel")
         .classList.add("winner");
